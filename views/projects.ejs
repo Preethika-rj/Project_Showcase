@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projects</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>Projects</h1>
+
+<a href="/create"><button>Add Project</button></a>
+<a href="/"><button>Home</button></a>
+
+<hr>
+
+<% projects.forEach(project => { %>
+  <div class="card">
+    <h3><%= project.title %></h3>
+    <p><strong>Domain:</strong> <%= project.domain %></p>
+    <p><%= project.description %></p>
+    <a href="<%= project.github %>" target="_blank">View GitHub</a>
+  </div>
+<% }) %>
+
+</div>
+
+</body>
+</html>

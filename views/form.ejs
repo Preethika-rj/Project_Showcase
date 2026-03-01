@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Project</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h2>Add New Project</h2>
+
+<form method="POST" action="/create">
+
+<label>Title</label>
+<input type="text" name="title" required>
+
+<label>Domain</label>
+<select name="domain" required>
+  <option>Computer Technology</option>
+  <option>Artificial Intelligence</option>
+  <option>Data Science</option>
+  <option>Mechanical</option>
+  <option>Civil</option>
+  <option>Electrical</option>
+</select>
+
+<label>Description</label>
+<textarea name="description" required></textarea>
+
+<label>GitHub Link</label>
+<input type="url" name="github" required>
+
+<button type="submit">Submit</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
